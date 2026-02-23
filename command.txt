@@ -2,10 +2,24 @@ docker build .
 
 docker run "image"
 
-docker run -p 3000:3000 "image"
+docker run -p 3000:3000 "image"    #with console    #run in foreground
 
-docker ps
+docker run -p 3000:3000 -d "image"    #without console    #run in background
 
-docker ps -a
+docker ps    #running
+
+docker ps -a    #all
 
 docker stop "container name"
+
+docker --help
+
+docker start "container name"    #restart the container
+
+docker start -a "container name"    #restart the container in attach mode
+
+docker attach "container name"    #see the foreground
+
+docker logs "container name"    #see the logs
+
+docker logs -f "container name"    #see the logs and keep on listening
