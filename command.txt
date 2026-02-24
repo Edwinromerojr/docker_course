@@ -23,3 +23,13 @@ docker attach "container name"    #see the foreground
 docker logs "container name"    #see the logs
 
 docker logs -f "container name"    #see the logs and keep on listening
+
+#Inter Active mode
+
+docker run -it "image"    #run the container with interactive
+
+docker run -i "image"    #run the container with interactive
+
+docker run -t "image"    #run the container with interactive
+
+docker start -a -i "container name"    #restart the container with input
