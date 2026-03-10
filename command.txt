@@ -6,9 +6,9 @@ docker run -p 3000:3000 "image"    #with console    #run in foreground
 
 docker run -p 3000:3000 -d "image"    #without console    #run in background
 
-docker ps    #running
+docker ps    #list of all running container
 
-docker ps -a    #all
+docker ps -a    #list of all container
 
 docker stop "container name"
 
@@ -24,8 +24,15 @@ docker logs "container name"    #see the logs
 
 docker logs -f "container name"    #see the logs and keep on listening
 
-#Inter Active mode
+docker images    #List of images
 
+docker image prune    #remove all the unuse images
+
+docker rmi "image id"    #delete image    #can do multiple just separate with space
+
+docker rm "container name"    #delete containter    #can do multiple just separate with space
+
+#Inter Active mode
 docker run -it "image"    #run the container with interactive
 
 docker run -i "image"    #run the container with interactive
