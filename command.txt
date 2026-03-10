@@ -32,6 +32,8 @@ docker rmi "image id"    #delete image    #can do multiple just separate with sp
 
 docker rm "container name"    #delete containter    #can do multiple just separate with space
 
+docker run --m    #Automatically remove the container when stop    #add the --m list a parameter
+
 #Inter Active mode
 docker run -it "image"    #run the container with interactive
 
