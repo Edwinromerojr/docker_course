@@ -46,6 +46,12 @@ docker run --name "custom name" "image id"    #run a container with a name
 
 docker build -t "name":"tag" .    #name and tag for the image
 
+docker tag "old image name and its tag" "new image name"    #rename the image
+
+docker login    #login your dockerhub
+
+docker logout    #logout your dockerhub
+
 #Inter Active mode
 docker run -it "image"    #run the container with interactive
 
