@@ -36,11 +36,15 @@ docker rmi "image id"    #delete image    #can do multiple just separate with sp
 
 docker rm "container name"    #delete containter    #can do multiple just separate with space
 
-docker run --m    #Automatically remove the container when stop    #add the --m list a parameter
+docker run --rm    #Automatically remove the container when stop    #add the --m list a parameter
 
 docker cp "folder name"/"file name or ." "container name":/"path"    #Copy folder or files in the running containter
 
 docker cp "container name":/"path" "folder name"    #Copy from the container to local
+
+docker run --name "custom name" "image id"    #run a container with a name
+
+docker build -t "name":"tag" .    #name and tag for the image
 
 #Inter Active mode
 docker run -it "image"    #run the container with interactive
