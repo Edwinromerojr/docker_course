@@ -38,6 +38,10 @@ docker rm "container name"    #delete containter    #can do multiple just separa
 
 docker run --m    #Automatically remove the container when stop    #add the --m list a parameter
 
+docker cp "folder name"/"file name or ." "container name":/"path"    #Copy folder or files in the running containter
+
+docker cp "container name":/"path" "folder name"    #Copy from the container to local
+
 #Inter Active mode
 docker run -it "image"    #run the container with interactive
 
