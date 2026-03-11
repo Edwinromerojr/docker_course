@@ -26,6 +26,10 @@ docker logs -f "container name"    #see the logs and keep on listening
 
 docker images    #List of images
 
+docker images -a    #List of all images
+
+docker inspect "image id"    #Info about that image
+
 docker image prune    #remove all the unuse images
 
 docker rmi "image id"    #delete image    #can do multiple just separate with space
